@@ -1,0 +1,8 @@
+<h1>Ver registro</h1>
+  <div>
+    <h2><%= @photo.title %></h2>
+    <p><%= image_tag @photo.image_url %></p>
+    <%= link_to 'volver al home', root_path %>
+    | <%= link_to 'Editar', "/photos/#{@photo.id}/edit" %>
+    <%= link_to 'Eliminar', "/photos/#{@photo.id}", method: :delete %>
+  </div>
